@@ -8,5 +8,6 @@ namespace WindowsFormsApp3.datos.instructor
 {
     internal class DatosInstructor
     {
+
     }
 }
