@@ -7,7 +7,7 @@ using SenatiPractica.presentacion;
 
 namespace SenatiPractica
 {
-    public partial class FrmLogin : Form
+    public partial class FrmLogin : MaterialSkin.Controls.MaterialForm
     {
         EntidadLogin _objEntidad;
         NegocioLogin _objNegocio;

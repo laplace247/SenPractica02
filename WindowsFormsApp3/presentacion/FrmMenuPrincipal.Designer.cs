@@ -52,7 +52,7 @@
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(6, 19);
+            this.btnIngresar.Location = new System.Drawing.Point(8, 29);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(91, 37);
             this.btnIngresar.TabIndex = 2;
@@ -68,16 +68,17 @@
             this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.btnIngresar);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 99);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(642, 239);
+            this.groupBox1.Size = new System.Drawing.Size(642, 274);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alumnos";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnRefrescar
             // 
-            this.btnRefrescar.Location = new System.Drawing.Point(7, 192);
+            this.btnRefrescar.Location = new System.Drawing.Point(9, 206);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(90, 35);
             this.btnRefrescar.TabIndex = 8;
@@ -91,7 +92,7 @@
             this.dgvAlumnos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAlumnos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlumnos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgvAlumnos.Location = new System.Drawing.Point(148, 15);
+            this.dgvAlumnos.Location = new System.Drawing.Point(142, 29);
             this.dgvAlumnos.Margin = new System.Windows.Forms.Padding(2);
             this.dgvAlumnos.MultiSelect = false;
             this.dgvAlumnos.Name = "dgvAlumnos";
@@ -100,10 +101,11 @@
             this.dgvAlumnos.Size = new System.Drawing.Size(480, 212);
             this.dgvAlumnos.TabIndex = 7;
             this.dgvAlumnos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumnos_CellClick);
+            this.dgvAlumnos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlumnos_CellContentClick);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(6, 62);
+            this.btnEditar.Location = new System.Drawing.Point(8, 72);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(91, 37);
             this.btnEditar.TabIndex = 5;
@@ -113,7 +115,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(6, 105);
+            this.btnEliminar.Location = new System.Drawing.Point(8, 115);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(91, 37);
             this.btnEliminar.TabIndex = 4;
@@ -123,7 +125,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(6, 148);
+            this.btnBuscar.Location = new System.Drawing.Point(8, 158);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(91, 37);
             this.btnBuscar.TabIndex = 3;

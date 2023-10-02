@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -81,6 +84,7 @@
     <Compile Include="presentacion\FrmSistemaInstructor.Designer.cs">
       <DependentUpon>FrmSistemaInstructor.cs</DependentUpon>
     </Compile>
+    <Compile Include="presentacion\instructor\EntidadIntructor.cs" />
     <Compile Include="presentacion\instructor\FrmBuscarInstructor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +130,15 @@
     <EmbeddedResource Include="presentacion\FrmSistemaInstructor.resx">
       <DependentUpon>FrmSistemaInstructor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\instructor\FrmBuscarInstructor.resx">
+      <DependentUpon>FrmBuscarInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\instructor\FrmEditarInstructor.resx">
+      <DependentUpon>FrmEditarInstructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\instructor\FrmIngresarInstructor.resx">
+      <DependentUpon>FrmIngresarInstructor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="presentacion\login\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,6 +154,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

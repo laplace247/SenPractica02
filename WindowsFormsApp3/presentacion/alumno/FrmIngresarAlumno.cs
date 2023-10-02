@@ -14,7 +14,7 @@ using SenatiPractica.negocio.alumno;
 
 namespace SenatiPractica.presentacion.alumno
 {
-    public partial class FrmIngresarAlumno : Form
+    public partial class FrmIngresarAlumno : MaterialSkin.Controls.MaterialForm
     {
         private NegocioAlumno _negocioAlumno = new NegocioAlumno();
 

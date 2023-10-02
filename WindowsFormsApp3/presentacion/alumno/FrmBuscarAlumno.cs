@@ -11,7 +11,7 @@ using SenatiPractica.common.alumno;
 
 namespace SenatiPractica.presentacion.alumno
 {
-    public partial class FrmBuscarAlumno : Form
+    public partial class FrmBuscarAlumno : MaterialSkin.Controls.MaterialForm
     {
         public ETipoBusquedaAlumno Tipo { get; set; }
         public string  Parametro { get; set; }

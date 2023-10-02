@@ -4,9 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsApp3.common.instructor
+namespace SenatiPractica.common.instructor
 {
-    internal class ETipoBusquedaInstructor
+    public enum ETipoBusquedaInstructor
     {
+        Dni,
+        Nombres,
+        Apellidos,
+        Edad,
+        Curso,
+        Genero
     }
 }

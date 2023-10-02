@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp3.presentacion
+﻿namespace SenatiPractica.presentacion
 {
     partial class FrmSistemaInstructor
     {
@@ -28,125 +28,150 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvInstructores = new System.Windows.Forms.DataGridView();
+            this.btnIngresar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnEditar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnEliminar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnBuscar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnRefrescar = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnSalir = new MaterialSkin.Controls.MaterialRaisedButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInstructores)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // dgvInstructores
             // 
-            this.button1.Font = new System.Drawing.Font("Arnold 2.1", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(53, 121);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 51);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "INGRESAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dgvInstructores.AllowUserToAddRows = false;
+            this.dgvInstructores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvInstructores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInstructores.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvInstructores.Location = new System.Drawing.Point(156, 121);
+            this.dgvInstructores.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvInstructores.MultiSelect = false;
+            this.dgvInstructores.Name = "dgvInstructores";
+            this.dgvInstructores.RowTemplate.Height = 24;
+            this.dgvInstructores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvInstructores.Size = new System.Drawing.Size(447, 255);
+            this.dgvInstructores.TabIndex = 8;
+            this.dgvInstructores.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInstructores_CellContentClick);
             // 
-            // button2
+            // btnIngresar
             // 
-            this.button2.Font = new System.Drawing.Font("Arnold 2.1", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(53, 227);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 51);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "EDITAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnIngresar.AutoSize = true;
+            this.btnIngresar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnIngresar.Depth = 0;
+            this.btnIngresar.Font = new System.Drawing.Font("Anime Ace 2.0 BB", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Location = new System.Drawing.Point(44, 150);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnIngresar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Primary = false;
+            this.btnIngresar.Size = new System.Drawing.Size(77, 36);
+            this.btnIngresar.TabIndex = 9;
+            this.btnIngresar.Text = "INGRESAR";
+            this.btnIngresar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnEditar
             // 
-            this.button3.Font = new System.Drawing.Font("Arnold 2.1", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(53, 325);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(102, 51);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "ELIMINAR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnEditar.AutoSize = true;
+            this.btnEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEditar.Depth = 0;
+            this.btnEditar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(47, 239);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Primary = false;
+            this.btnEditar.Size = new System.Drawing.Size(59, 36);
+            this.btnEditar.TabIndex = 10;
+            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnEliminar
             // 
-            this.button4.Font = new System.Drawing.Font("Arnold 2.1", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(623, 121);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(102, 51);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "BUSCAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnEliminar.AutoSize = true;
+            this.btnEliminar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEliminar.Depth = 0;
+            this.btnEliminar.Location = new System.Drawing.Point(44, 321);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Primary = false;
+            this.btnEliminar.Size = new System.Drawing.Size(74, 36);
+            this.btnEliminar.TabIndex = 11;
+            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnBuscar
             // 
-            this.button5.Font = new System.Drawing.Font("Arnold 2.1", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(623, 227);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(102, 51);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "REFRESCAR";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnBuscar.AutoSize = true;
+            this.btnBuscar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnBuscar.Depth = 0;
+            this.btnBuscar.Location = new System.Drawing.Point(640, 179);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnBuscar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Primary = false;
+            this.btnBuscar.Size = new System.Drawing.Size(65, 36);
+            this.btnBuscar.TabIndex = 12;
+            this.btnBuscar.Text = "BUSCAR";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // btnRefrescar
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(182, 121);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(414, 255);
-            this.dataGridView1.TabIndex = 5;
+            this.btnRefrescar.AutoSize = true;
+            this.btnRefrescar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRefrescar.Depth = 0;
+            this.btnRefrescar.Location = new System.Drawing.Point(630, 285);
+            this.btnRefrescar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRefrescar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnRefrescar.Name = "btnRefrescar";
+            this.btnRefrescar.Primary = false;
+            this.btnRefrescar.Size = new System.Drawing.Size(87, 36);
+            this.btnRefrescar.TabIndex = 13;
+            this.btnRefrescar.Text = "REFRESCAR";
+            this.btnRefrescar.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btnSalir
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Anime Ace 2.0 BB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(226, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "SISTEMA DE INSTRUCTORES";
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Arnold 2.1", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(623, 325);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(102, 51);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "SALIR";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSalir.Depth = 0;
+            this.btnSalir.Location = new System.Drawing.Point(320, 418);
+            this.btnSalir.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Primary = true;
+            this.btnSalir.Size = new System.Drawing.Size(127, 44);
+            this.btnSalir.TabIndex = 15;
+            this.btnSalir.Text = "SALIR";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // FrmSistemaInstructor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 533);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(748, 499);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnRefrescar);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.dgvInstructores);
             this.Name = "FrmSistemaInstructor";
             this.Text = "Sistema de Instructores";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmSistemaInstructor_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInstructores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.DataGridView dgvInstructores;
+        private MaterialSkin.Controls.MaterialFlatButton btnIngresar;
+        private MaterialSkin.Controls.MaterialFlatButton btnEditar;
+        private MaterialSkin.Controls.MaterialFlatButton btnEliminar;
+        private MaterialSkin.Controls.MaterialFlatButton btnBuscar;
+        private MaterialSkin.Controls.MaterialFlatButton btnRefrescar;
+        private MaterialSkin.Controls.MaterialRaisedButton btnSalir;
     }
 }

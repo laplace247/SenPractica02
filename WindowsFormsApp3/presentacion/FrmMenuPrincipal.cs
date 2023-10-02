@@ -12,11 +12,10 @@ using SenatiPractica.common.alumno;
 using SenatiPractica.negocio;
 using SenatiPractica.negocio.alumno;
 using SenatiPractica.presentacion.alumno;
-using SenatiPractica.common.alumno;
 
 namespace SenatiPractica.presentacion
 {
-    public partial class FrmMenuPrincipal : Form
+    public partial class FrmMenuPrincipal : MaterialSkin.Controls.MaterialForm
     {
         private NegocioAlumno _negocioAlumno = new NegocioAlumno();
 
@@ -149,6 +148,16 @@ namespace SenatiPractica.presentacion
         private void btnRefrescar_Click(object sender, EventArgs e)
         {
             CargarTodosAlumnos();
+        }
+
+        private void dgvAlumnos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

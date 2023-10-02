@@ -19,7 +19,6 @@ namespace SenatiPractica.presentacion.alumno
 
         public delegate void AlumnoGrillaLoadEventHandler();
         public event AlumnoGrillaLoadEventHandler AlumnoGrillaLoaded;
-
         public FrmEditarAlumno(EntidadAlumno entidadAlumno)
         {
             _entidadAlumno = entidadAlumno;
@@ -45,8 +44,8 @@ namespace SenatiPractica.presentacion.alumno
 
                 Close();
             }
-            
-            
+
+
 
         }
         private void FrmEditarAlumno_Shown(object sender, EventArgs e)

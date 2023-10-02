@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SenatiPractica.common;
 using SenatiPractica.common.alumno;
-using SenatiPractica.common.alumno;
 
 namespace SenatiPractica.negocio.alumno
 {
@@ -81,6 +80,11 @@ namespace SenatiPractica.negocio.alumno
         public int EliminarAlumnoN(int idAlumno) {
 
             return _datosAlumno.EliminarAlumno(idAlumno);
+        }
+
+        internal object ObtenerTodosInstructoresN()
+        {
+            throw new NotImplementedException();
         }
     }
 }
